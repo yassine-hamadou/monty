@@ -1,5 +1,5 @@
-#ifndef main_H
-#define main_H
+#ifndef MONTY_H
+#define MONTY_H
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -25,7 +25,7 @@ typedef struct stack_s
 /**
  * struct bus_s - variables -args, file, line content
  * @arg: value
- * @file: pointer to main file
+ * @file: pointer to monty file
  * @content: line content
  * @lifi: flag change stack <-> queue
  * Description: carries values through the program
