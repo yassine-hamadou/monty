@@ -1,9 +1,9 @@
-# Monty
+# main
 
-`Monty 0.98` is a scripting language that is first compiled into monty byte codes (Just like python). It relies on a unique stack, with specific instructions to manipulate it. **`monty`** is an interpreter built specially for the said Monty Bytecodes files.
+`main 0.98` is a scripting language that is first compiled into main byte codes (Just like python). It relies on a unique stack, with specific instructions to manipulate it. **`main`** is an interpreter built specially for the said main Bytecodes files.
 
-## More About the Monty language
-This is a language that contains specific instructions to manipulate data information (stacks or queues), where each instruction (*called opcode*) is sended per line. Files which contains Monty byte codes usually have the `.m` extension.
+## More About the main language
+This is a language that contains specific instructions to manipulate data information (stacks or queues), where each instruction (*called opcode*) is sended per line. Files which contains main byte codes usually have the `.m` extension.
 
 Example (`file.m`):
 ```bash
@@ -40,21 +40,21 @@ $
 To compile all files:
 
 ```bash
-$ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
+$ gcc -Wall -Werror -Wextra -pedantic *.c -o main
 $
 ```
 
 The **synopsis** of the interpreter is the following:
 
 ```bash
-$ ./monty [filename]
+$ ./main [filename]
 $
 ```
 
 To run the interpreter:
 
 ```bash
-$ ./monty file.m
+$ ./main file.m
 2
 1
 0
@@ -67,7 +67,7 @@ $
 
 ## Features
 ### Opcodes
-`monty` executes the following opcodes:
+`main` executes the following opcodes:
 
 | Opcode | Description |
 | -------- | ----------- |
@@ -98,13 +98,13 @@ $ cat errorfile.m
 push 1
 pint
 pcx
-$ ./monty errorfile.m
+$ ./main errorfile.m
 1
 L3: unknown instruction pcx
 ```
 
 ### Return value
-When there is no errors, `monty` returns `0`. Otherwise, returns `1`
+When there is no errors, `main` returns `0`. Otherwise, returns `1`
 
 ## Authors
 <details>

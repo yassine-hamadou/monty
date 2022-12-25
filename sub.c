@@ -1,4 +1,4 @@
-#include "monty.h"
+#include "main.h"
 /**
   *f_sub- sustration
   *@head: stack head
